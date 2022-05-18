@@ -33,6 +33,13 @@ Features, definitions & rules
 1. Input features
    - Listen HTTP POST to process request and response
 
+   #### Http EndPoints
+   - `/rectangles/features/intersection`
+   - `/rectangles/features/containment`
+   - `/rectangles/features/adjacency`
+   ##### OpenAPI definition
+   - `/swagger-ui.html`
+
    #### API contracts
       POST Request for intersection, containment and adjacency
 ```json
