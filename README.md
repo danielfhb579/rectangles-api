@@ -13,7 +13,7 @@ The features develop to evaluate in the rectangles API are:
 1. Intersection: determine whether two rectangles have one or more intersecting lines and produce a result 
 identifying the points of intersection. The expected result for this feature is a message with the result indicating
 whether there is an intersection and if there is returns a set with the points.
-![Intersection](https://github.com/danielfhb579/rectangles-api/blob/main/intersetion.jpg?raw=true)
+   ![Intersection](https://github.com/danielfhb579/rectangles-api/blob/main/intersection.jpg?raw=true)
 2. Containment: determine whether a rectangle is wholly contained within another rectangle. The current version 
 identifies the one greater area and then performs the validation of containment. There is not needed to specify the order
 in which one rectangle contains the other.
@@ -34,25 +34,25 @@ Features, definitions & rules
    - Listen HTTP POST to process request and response
 
    #### API contracts
-      Request
+      POST Request for intersection, containment and adjacency
 ```json
 {
    "type": "rectangle",
    "Rectangles": [
-   {
-   "bottomLeftX": 5,
-   "bottomLeftY": 4,
-   "upperRightX": 9,
-   "upperRightY": 6
-   },
-   {
-   "bottomLeftX": 9,
-   "bottomLeftY": 5,
-   "upperRightX": 11,
-   "upperRightY": 7
-   }
+      {
+         "bottomLeftX": 5,
+         "bottomLeftY": 4,
+         "upperRightX": 9,
+         "upperRightY": 6
+      },
+      {
+         "bottomLeftX": 9,
+         "bottomLeftY": 5,
+         "upperRightX": 11,
+         "upperRightY": 7
+      }
    ]
-   }
+}
 ```
 
 2. Libraries and technologies integrated:
