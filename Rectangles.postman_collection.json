@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "1dd39789-6b6c-4fa7-829a-abc8513286a5",
+		"name": "Rectangles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "intersection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"type\": \"rectangle\",\r\n   \"Rectangles\": [\r\n      {\r\n         \"bottomLeftX\": 1,\r\n         \"bottomLeftY\": 1,\r\n         \"upperRightX\": 4,\r\n         \"upperRightY\": 4\r\n      },\r\n      {\r\n         \"bottomLeftX\": 0,\r\n         \"bottomLeftY\": 2,\r\n         \"upperRightX\": 6,\r\n         \"upperRightY\": 3\r\n      }\r\n   ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rectangles/features/intersection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rectangles",
+						"features",
+						"intersection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "containment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"type\": \"rectangle\",\r\n   \"Rectangles\": [\r\n      {\r\n         \"bottomLeftX\": 1,\r\n         \"bottomLeftY\": 1,\r\n         \"upperRightX\": 5,\r\n         \"upperRightY\": 4\r\n      },\r\n      {\r\n         \"bottomLeftX\": 2,\r\n         \"bottomLeftY\": 2,\r\n         \"upperRightX\": 4,\r\n         \"upperRightY\": 3\r\n      }\r\n   ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rectangles/features/containment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rectangles",
+						"features",
+						"containment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adjacency",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"type\": \"rectangle\",\r\n   \"Rectangles\": [\r\n      {\r\n         \"bottomLeftX\": 5,\r\n         \"bottomLeftY\": 4,\r\n         \"upperRightX\": 9,\r\n         \"upperRightY\": 6\r\n      },\r\n      {\r\n         \"bottomLeftX\": 9,\r\n         \"bottomLeftY\": 5,\r\n         \"upperRightX\": 11,\r\n         \"upperRightY\": 7\r\n      }\r\n   ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rectangles/features/adjacency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rectangles",
+						"features",
+						"adjacency"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
