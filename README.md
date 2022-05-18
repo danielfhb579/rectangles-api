@@ -24,7 +24,7 @@ in which one rectangle contains the other.
      some other side of another rectangle
    - Partial: adjacent lines where a line segment on a side of a rectangle exists as a set of points on some side of 
      another rectangle.
-     ![Adjacency](https://github.com/danielfhb579/rectangles-api/blob/main/adjacency.jpg?raw=true)
+   ![Adjacency](https://github.com/danielfhb579/rectangles-api/blob/main/adjacency.jpg?raw=true)
 
 ---
 Features, definitions & rules
